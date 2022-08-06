@@ -1,0 +1,23 @@
+.itemPic{
+    max-width: 300px;
+    max-height: 400px;
+    display: flex;
+    flex: 3;
+    align-items: center;
+    background-color: white;
+
+}
+
+
+.itemBody{
+    flex: 1;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.itemCard{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+    margin: 0px 0px 20px 0px;
+}

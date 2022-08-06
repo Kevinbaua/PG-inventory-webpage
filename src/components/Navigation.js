@@ -1,26 +1,47 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
 
+import "./Navigation.css";
+import cart from "../cart.png";
 
 class Navigation extends Component {
-  state = {};
   render() {
     return (
-      <Navbar bg="primary" variant="dark" >
+      <Navbar bg="primary" variant="dark">
         <Container fluid="md" className="justify-content-between">
+          <Navbar.Brand className="fw-bold fs-3 px-0 mx-0 border border-0">
+            PG Inventory
+          </Navbar.Brand>
 
-          <Navbar.Brand href="#home" className='fw-bold fs-3 px-0 mx-0 border border-0'>PG Inventory</Navbar.Brand>
-
-          <Nav className="fs-5">
-            <Nav.Link href="#music" className='px-3'>Music</Nav.Link>
-            <Nav.Link href="#sports" className='px-3'>Sports</Nav.Link>
-            <Nav.Link href="#tech" className='px-3'>Tech</Nav.Link>
-            <Nav.Link href="#contact" className='ms-5'>Contact Us</Nav.Link>
-          </Nav>
-
+          <div className="fs-5 d-flex">
+            <Link to="/" className="nav-links">
+              Home
+            </Link>
+            <Link to="/music" className="nav-links">
+              Music
+            </Link>
+            <Link to="/sports" className="nav-links">
+              Sports
+            </Link>
+            <Link to="/tech" className="nav-links">
+              Tech
+            </Link>
+            <Link to="/cart" className="nav-links">
+              <div className="cart">
+                <img src={cart} alt="cart" />
+                <span className="badge">
+                  {this.props.cartItems.length !== 0 &&
+                    this.props.cartItems.length}
+                </span>
+              </div>
+            </Link>
+            <Link to="/contact" className="nav-links">
+              Contact Us
+            </Link>
+          </div>
         </Container>
       </Navbar>
     );

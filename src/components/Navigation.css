@@ -1,0 +1,22 @@
+.nav-links{
+    color: white;
+    padding: 0rem 1rem;
+    text-decoration: none;
+}
+
+.nav-links:hover{
+    color: rgb(198, 198, 198);
+}
+
+.cart{
+    width: 35px;
+    height: 35px;
+    background-color: lightblue;
+    padding: 4px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.cart img{
+    width: 100%;
+}

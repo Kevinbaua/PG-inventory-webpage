@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./Footer.css";
 
 function Footer() {
-    return ( 
-        <div className='bg-dark text-center text-white p-3'>
-            PG Inventory Website
-        </div>
-     );
+  return (
+    <footer className="bg-dark text-center text-white p-3">
+      PG Inventory Website
+    </footer>
+  );
 }
 
 export default Footer;
