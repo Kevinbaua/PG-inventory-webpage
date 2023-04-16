@@ -3,7 +3,8 @@
 - Add to cart functionality for issuing items from inventory implemented using React props and hooks.
 - After downloading, run `npm install` and `npm start` to view the website on localhost.
 
-
+## Demo
+https://drive.google.com/file/d/1sQ_j8Yk6Sq8lxfORy9ak_-ChPI1ETuRX/view?usp=sharing
 
 # Getting Started with Create React App
 
