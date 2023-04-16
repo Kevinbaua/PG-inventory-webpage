@@ -1,3 +1,10 @@
+# PG inventory webpage
+- This is a Single Page Application for a PG inventory built using ReactJS and react-bootstrap.
+- Add to cart functionality for issuing items from inventory implemented using React props and hooks.
+- After downloading, run `npm install` and `npm start` to view the website on localhost.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
